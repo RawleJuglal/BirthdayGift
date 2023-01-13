@@ -1,7 +1,13 @@
+
+@keyframes peel {
+    from{background:url("images/gift-cover.jpg"); background-size:cover;}
+    to{background:var(--giphy); background-size:cover;}
+}
+
 body {
     text-align: center;
     font-family: 'Happy Monkey', cursive;
-    background: linear-gradient(#a2d2ff, #EFB0C9);
+    background: linear-gradient(#2a9d8f, #e9c46a);
     color: #ffffff;
 }
 
@@ -12,12 +18,12 @@ h1, h2, h3, h4, p {
 #bff-img {
     width: 150px;
     border-radius: 50%;
-    border: 6px solid #EFB0C9;
+    border: 6px solid #e9c46a;
     margin-bottom: 10px;
 }
 
 #bday-age {
-    background: #EFB0C9;
+    background: #e9c46a;
     padding: 5px 10px;
     border-radius: 5px;
     margin: 5px 0 10px 0;
@@ -25,7 +31,7 @@ h1, h2, h3, h4, p {
 
 #bday-date {
     margin: 0;
-    background: #EFB0C9;
+    background: #e9c46a;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -55,31 +61,46 @@ h1, h2, h3, h4, p {
 .gift-img {
     margin: 20px auto;
     max-width: 400px;
-    height: 400px;
+    height: 225px;
     border: 6px solid white;
     border-radius: 10px;
     background-image: url("images/gift-cover.jpg");
-    background-size: cover;
+    background-size:cover;
 }
 
 #gift-img-happy:hover {
-    background-image: url("images/happy.gif");
+    --giphy:url("https://media.giphy.com/media/26xBQuuO7PaO4FRPq/giphy-downsized-large.gif");
+    animation-name:peel;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
 }
 
 #gift-img-hot:hover {
-    background-image: url("images/hot.gif");
+    --giphy:url("https://media.giphy.com/media/BZhscDxxBi3FGAKnfo/giphy.gif");
+    animation-name:peel;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
 }
 
-#gift-img-genius:hover {
-    background-image: url("images/genius.gif");
+#gift-img-genius:hover { 
+    --giphy:url("https://media.giphy.com/media/d2Z9QYzA2aidiWn6/giphy.gif");
+    animation-name:peel;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
 }
 
 #gift-img-badass:hover {
-    background-image: url("images/badass.gif");
+    --giphy:url("https://media.giphy.com/media/7qZ3ZX1Gu3TZm/giphy.gif");
+    animation-name:peel;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
 }
 
 #gift-img-cheers:hover {
-    background-image: url("images/cheers.gif");
+    --giphy: url("https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif");
+    animation-name:peel;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
 }
 
 #footer {
@@ -91,3 +112,4 @@ h1, h2, h3, h4, p {
 a {
     color: white;
 }
+
